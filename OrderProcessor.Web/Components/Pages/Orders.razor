@@ -1,0 +1,33 @@
+﻿@page "/orders"
+@rendermode InteractiveServer
+@inject IEmailProcessingService MailService
+
+<PageTitle>Processed orders</PageTitle>
+
+<MudDataGrid Items="@OrdersList">
+    <Columns>
+        <PropertyColumn Property="x => x.ProductName" Title = "Product" />
+        <PropertyColumn Property="x => x.Quantity" />
+        <PropertyColumn Property="x => x.Price" />
+    </Columns>
+</MudDataGrid>
+
+@code {
+    private int currentCount;
+    private string? Error;
+    private IEnumerable<OrderInformation> OrdersList = new List<OrderInformation>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Error = null;
+
+        try
+        {
+            OrdersList = await MailService.ProcessEmails();
+        }
+        catch (Exception ex)
+        {
+            Error = $"Error: {ex.Message}";
+        }
+    }
+}

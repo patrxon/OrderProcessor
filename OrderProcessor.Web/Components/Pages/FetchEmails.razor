@@ -1,0 +1,49 @@
+﻿@page "/fetch-emails"
+@rendermode InteractiveServer
+@inject IImapMailService MailService
+
+
+<PageTitle>Fetch E-Mails</PageTitle>
+
+<button class="btn btn-primary" @onclick="FetchUserEmails">Fetch E-Mails</button>
+
+@if (IsLoading)
+{
+    <p class="mt-4 text-yellow-600">Loading...</p>
+}
+@if (Success)
+{
+    <p class="mt-4 text-green-600">E-Mails got downloaded and stored in the database.</p>
+}
+@if (Error != null)
+{
+    <p class="mt-4 text-red-600">@Error</p>
+}
+
+@code {
+    private bool IsLoading = false;
+    private bool Success = false;
+    private string? Error;
+
+    private async Task FetchUserEmails()
+    {
+        IsLoading = true;
+        Success = false;
+        Error = null;
+        
+        try
+        {
+            await MailService.LoadEmailsAsync();
+            await MailService.StoreEmailsAsync();
+            Success = true;
+        }
+        catch (Exception ex)
+        {
+            Error = $"An error occurred while loading e-mails: {ex.Message}";
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+}

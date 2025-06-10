@@ -1,0 +1,291 @@
+Received: from DU5PR08MB10516.eurprd08.prod.outlook.com (2603:10a6:10:528::11)
+ by PAXPR08MB7599.eurprd08.prod.outlook.com with HTTPS; Thu, 3 Apr 2025
+ 18:26:17 +0000
+Received: from DUZPR01CA0251.eurprd01.prod.exchangelabs.com
+ (2603:10a6:10:4b5::23) by DU5PR08MB10516.eurprd08.prod.outlook.com
+ (2603:10a6:10:528::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8534.44; Thu, 3 Apr
+ 2025 18:26:15 +0000
+Received: from DB1PEPF000509E6.eurprd03.prod.outlook.com
+ (2603:10a6:10:4b5:cafe::2d) by DUZPR01CA0251.outlook.office365.com
+ (2603:10a6:10:4b5::23) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8606.26 via Frontend Transport; Thu,
+ 3 Apr 2025 18:26:15 +0000
+Authentication-Results: spf=pass (sender IP is 185.135.89.146)
+ smtp.mailfrom=example.com; dkim=pass (signature was verified)
+ header.d=example.com;dmarc=pass action=none
+ header.from=example.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of example.com
+ designates 185.135.89.146 as permitted sender)
+ receiver=protection.outlook.com; client-ip=185.135.89.146; helo=mail15.lh.pl;
+ pr=C
+Received: from mail15.lh.pl (185.135.89.146) by
+ DB1PEPF000509E6.mail.protection.outlook.com (10.167.242.56) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8606.22
+ via Frontend Transport; Thu, 3 Apr 2025 18:26:15 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=example.com; s=default; h=Date:To:From:Reply-To:
+	Subject:Message-ID:X-Mailer:MIME-Version:Content-Type:
+	Content-Transfer-Encoding; bh=g7+tkTClMedU3Mpd0JKahzqfYy07AgKFY+
+	nyeYdTQLE=; b=lSAcN07Tq3WPij71mWKLYk0ynoXhCC/KMdBGNE8LQ5HdPoVtid
+	NNipesBOrs8oi3su8txwJFcEVQ6r0VknOCLgHp4MVT1IIY6+XU06+2Li0Dk7Xho0
+	zDni5DrjTQtkdTRB/VJ+JuTKo8gja8pmwK+NGp5BUzY7rYDC4vlU10zxTpRGVQ+u
+	dEjI+6GeLgycjmesmpwin6E+a7awTksiV++nQ4C82klNNAzMGxGmLGTLjO5W+I/U
+	4FOeQ3H1tkel2ywMoEloYHW87bVmG21rGPTAa79LnxPyPqQ0kXI7IGM108src/A2
+	8pRhP/3WClEEPDi5zpqDM+V+ZN19jEI9YkDA==
+Received: (qmail 20862 invoked by uid 89); 3 Apr 2025 20:26:14 +0200
+X-Qmail-Scanner-Diagnostics: from 94.154.117.195 (sklep@example.com@94.154.117.195) by mail15 (envelope-from <sklep@example.com>, uid 89) with qmail-scanner-2.11st 
+ (mhr: 1.0. clamdscan: 0.97.8/18468. spamassassin: 3.3.2. perlscan: 2.11st.  
+ Clear:RC:1(94.154.117.195):. 
+ Processed in 0.022868 secs); 03 Apr 2025 18:26:14 -0000
+Received: from unknown (HELO example.com) (sklep@example.com)
+  by 0 with ESMTPA; 3 Apr 2025 20:26:14 +0200
+Date: Thu, 3 Apr 2025 18:26:14 +0000
+To: lukasz.loch@leaware.com
+From: Simplelightcandle <sklep@example.com>
+Reply-To: =?UTF-8?Q?Zosia_Pi=C4=85tkowska?= <Zosiap_37@wp.pl>
+Subject: =?UTF-8?Q?[Simple_Light_Candle]:_Nowe_zam=C3=B3wienie_2853?=
+Message-ID: <4NlaumjeUKhDcxhW7b3k4QfkGID4ly0YpXgyjXBnOzY@example.com>
+X-Mailer: EasyWPSMTP/Mailer/smtp 2.10.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Return-Path: sklep@example.com
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Apr 2025 18:26:15.4033
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 14a97513-1f17-44d6-0981-08dd72dd0505
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: c7c0bab3-7942-4265-aaee-8e72ffab821e:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DB1PEPF000509E6:EE_|DU5PR08MB10516:EE_|PAXPR08MB7599:EE_
+X-MS-Exchange-Organization-AuthSource: DB1PEPF000509E6.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 14a97513-1f17-44d6-0981-08dd72dd0505
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|8096899003|19620145002;
+X-Forefront-Antispam-Report: CIP:185.135.89.146;CTRY:PL;LANG:pl;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail15.lh.pl;PTR:mail15.lh.pl;CAT:NONE;SFS:(13230040)(8096899003)(19620145002);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Apr 2025 18:26:15.1846
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 14a97513-1f17-44d6-0981-08dd72dd0505
+X-MS-Exchange-CrossTenant-Id: c7c0bab3-7942-4265-aaee-8e72ffab821e
+X-MS-Exchange-CrossTenant-AuthSource: DB1PEPF000509E6.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU5PR08MB10516
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0783720
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8583.038
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?OUN2Q2x4K3VhbmFkMDNCbXdLcUgrUEMvVnRRZWNhaHd0VS9hQks4QXd2WFo5?=
+ =?utf-8?B?M3U4Z2F4eTlCeXRWNXdKWmhuTVJOYXR6SC9KYURULzNDRjQ5ZXBET0s2c3gx?=
+ =?utf-8?B?UEZSdW5LZFlCV3NaZ3UrOUp2NXJCajZwcDlRQUJralF0Mnp3YXVjdWNSd2dw?=
+ =?utf-8?B?UHVZUXBEQ0Y4N1R2V1p1cmRydU9iMkNuVDBBMUlvYThsM1p5cXZvUG9aZkJC?=
+ =?utf-8?B?Z3lTWW9iTFBKRVhmTE9mSFFMRTkwc2tvNmRER05ZS0dBUEJlM0RDdnU3VE0z?=
+ =?utf-8?B?ZlRaa2E3alZhbzEySWd2TTIwYVlvR0NGQzZteDk0dWRwSS9yRElEWlZ0U0pI?=
+ =?utf-8?B?enlxRUxVY3NqbXlDMGplU1JQV2U0cVdlSGNyZmVOeThjNTBHSFB6NUtDUld4?=
+ =?utf-8?B?V21QbjgrWlUxUkNxTVlYN1cyVFovWGVMUHpSZzdsZ0dMTTNvc0RwVEVrekVu?=
+ =?utf-8?B?bjNtdGFUZXNVM0VlaHNzcmVmL0hwZGkyNndFcnFwR3UyMUNiRU5mdkprcm9K?=
+ =?utf-8?B?NXJpSGR4b2tlU0cyYzBPNVZMQ21CbnlXanVOZ0llU1pMMFk5Q2dZYzJYTUty?=
+ =?utf-8?B?endxTERzQVJxYUxLemV1WnVEMXlBamtDS1hyOG1jdEVZaGIvTFBQcHVrSjI0?=
+ =?utf-8?B?Q0ZMaU43MHFpUEdZejBKeFgwOEs1T3VwNkNrTjRraUJMV08zZFN1Nm9QVVJI?=
+ =?utf-8?B?Q1ZQRzI5RUEwQjBYcUlyZUxrMkE5amUxWlZJcVJXVFBkK0YvVFQzdVB5SHR0?=
+ =?utf-8?B?NlZyWjc5bE5mV3ZpcUE4cEFRbkJMMWhvNGJUSXd1cks3Vi94Z3Vrd01CWkhh?=
+ =?utf-8?B?clBSS0ZZaUJWclJ6Z2laakdvQk1ZREZsU0ROeUlxRDJ4V1lXUlFCdDBScTUy?=
+ =?utf-8?B?U2xWVFN3T1JYalV4RUN2bURwUEh4L2ZjdTk3SzhuN0RLb1BEYzV2cEpuVGxK?=
+ =?utf-8?B?Rld5azZ2ejJzazVTNEtYNnBaWHZuRXZtMnJJYmx3cVRRSFJiamhMdWdvNHF6?=
+ =?utf-8?B?ZzhFa2tSa3RFL0QybGwzcWl5eU1FSlhOOTlwOXVoTzltM0QrNFpHbzU1UFg1?=
+ =?utf-8?B?dE1KZTA1NTA5MXhDU2JaU3krUVN2VXRlVWY4ZzRZeHJTdWRzUVRBaFJSdGJN?=
+ =?utf-8?B?UjZQZ1JjQzBGbFhycUtwaWtwWG5QTlovVldSTlNEVkRhZ2RzZGtrOVNjV2RC?=
+ =?utf-8?B?Rkc0ZWFSdnVSbUx6UGhkcmRIaTFjWDh2ZlBlTUt6RGlsRUZRcEJzZThGMUgv?=
+ =?utf-8?B?SURNNEJvRzlMdnJveWphc2pwUmV1a3NuUVgwUngreWZkb29jMXlzM3JWT2k1?=
+ =?utf-8?B?NmgrcTAxSmRpOEUxcGtiZU1wcFErMlNiS3RwU3hmU1BGQklScXVOc1hFNkR3?=
+ =?utf-8?B?ZXo5N1VDT2pyQkZ2TnJnT3VZcW9MdStNa2RwWmdidGovY1Y1NmxHZm50Yktj?=
+ =?utf-8?B?bTRERTA3QnpQRTU2cGdETks5bVA2Ui82YWg5VGtHQXh2cFJ3U2xaUjc3VXYy?=
+ =?utf-8?B?eUoyUERCWThxdjJzOUR1V215YmUvNjJCUVRWZzRmaGJwWlJQc2Z2dlFjWXdr?=
+ =?utf-8?B?SFlnSFBPSEhtMmhmNVJ0ajhpelNvTURGNFR4ckQ3c2oyMS82V05KcUZNNU1O?=
+ =?utf-8?B?MnY4bGVkVHYvSm1iZUV0ZmJpSXlIelpWemQ1b1pGUkcwVWFJUlBwZ0pDNnRE?=
+ =?utf-8?B?SUxpRElaUHZOR0RDZnN4NXRmRkp6a2VkVUQvQWcyTHBsT0JoT3h3ekFSY1VF?=
+ =?utf-8?B?ZHluRmJPQTRjcHNrd29zdWxVbEt5UStqbnpUTERTZ2hFWDY5OG85OFFXRjFJ?=
+ =?utf-8?B?QlNGam9XcU1TeCtybnpNejhTSUZ4OWtCOWQ1UU5WdXM2NVFDL0preEVodFJo?=
+ =?utf-8?B?bmMwQnJFS1g5MG0yL0VmOXUwZ2d0WnR4UlRFRnFTOVFQTFRxem5XUEk1SlJk?=
+ =?utf-8?B?ck0rTTJBaDg2L09aQmI3bWFiWEphTVBXa052ZnBiUDgwYnhmaU1oZlJBZUtu?=
+ =?utf-8?B?cWFubW5ONWVDVFlxbzBNV2ZZY2NlcXcrOGFERmlxQ3AxRTJZRzZvTVhiUlN1?=
+ =?utf-8?B?bWUyeWQrd1U4QkhPQXZKT2JSa3NZMElad01CUDdML2pGdk5rTzBlUkdUemg5?=
+ =?utf-8?B?bmU4V0xtaEdCdHd0c2szVHFYRWk3emRmUVNZbVFxcjA4eUVVdHVCV1FiYVFS?=
+ =?utf-8?B?VXZTUnVLS3dsWmV4RzFTWEJGM2RHbEplTDVYV2FxTzNaOVpHREhuVDBldEM1?=
+ =?utf-8?B?WitVMllaTHc4UCs4THAySXVCbGxhSG5nZ2VCMmFiYnoza0hyVkUwT3FqZFI2?=
+ =?utf-8?B?b2t1UVJ2U281bWV6TVRPTFRZK242ZDRwWkFGTWhCa3dyWEdWSU5ZTklsMFFU?=
+ =?utf-8?B?S1c3MUhxTG5SRnRhcDkxeXZpczJycVpnVmJ5SVVkVGIwMjU5S2VNa3EybVNw?=
+ =?utf-8?B?MXJtYlh3YWMvUFRLZXIzcHZuNmNMUEg1UEorQVB6NXZsVkRuamtLVW1jbHpV?=
+ =?utf-8?B?dFZqVzQyZnpoemtoTnNkT0tIK2NJTnhSK3RvL2dNejJSZWs4ODg1dUsvSHhT?=
+ =?utf-8?Q?b8JbfmHZNaLDLVuVsXEK8aK7uEFqg/?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html lang="pl-PL"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Simple Light Candle</title>
+	<style type="text/css">@media screen and (max-width: 600px){#header_wrapper{padding: 27px 36px !important; font-size: 24px;}#body_content table > tbody > tr > td{padding: 10px !important;}#body_content_inner{font-size: 10px !important;}}</style>
+</head>
+	<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="background-color: #f7f7f7; padding: 0; text-align: center;" bgcolor="#f7f7f7">
+		<table width="100%" id="outer_wrapper" style="background-color: #f7f7f7;" bgcolor="#f7f7f7">
+			<tr>
+				<td><!-- Deliberately empty to support consistent sizing and layout across multiple email clients. --></td>
+				<td width="600">
+					<div id="wrapper" dir="ltr" style="margin: 0 auto; padding: 70px 0; width: 100%; max-width: 600px; -webkit-text-size-adjust: none;" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="inner_wrapper">
+							<tr>
+								<td align="center" valign="top">
+									<div id="template_header_image">
+																			</div>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="template_container" style="background-color: #fff; border: 1px solid #dedede; box-shadow: 0 1px 4px rgba(0,0,0,.1); border-radius: 3px;" bgcolor="#fff">
+										<tr>
+											<td align="center" valign="top">
+												<!-- Header -->
+												<table border="0" cellpadding="0" cellspacing="0" width="100%" id="template_header" style="background-color: #7f54b3; color: #fff; border-bottom: 0; font-weight: bold; line-height: 100%; vertical-align: middle; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; border-radius: 3px 3px 0 0;" bgcolor="#7f54b3">
+													<tr>
+														<td id="header_wrapper" style="padding: 36px 48px; display: block;">
+															<h1 style="font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; margin: 0; text-align: left; text-shadow: 0 1px 0 #9976c2; color: #fff; background-color: inherit;" bgcolor="inherit">Nowe zamówienie: 2853</h1>
+														</td>
+													</tr>
+												</table>
+												<!-- End Header -->
+											</td>
+										</tr>
+										<tr>
+											<td align="center" valign="top">
+												<!-- Body -->
+												<table border="0" cellpadding="0" cellspacing="0" width="100%" id="template_body">
+													<tr>
+														<td valign="top" id="body_content" style="background-color: #fff;" bgcolor="#fff">
+															<!-- Content -->
+															<table border="0" cellpadding="20" cellspacing="0" width="100%">
+																<tr>
+																	<td valign="top" style="padding: 48px 48px 32px;">
+																		<div id="body_content_inner" style="color: #636363; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; font-size: 14px; line-height: 150%; text-align: left;" align="left">
+
+<p style="margin: 0 0 16px;">Otrzymałeś następujące zamówienie od Zosia Nowakowska:</p>
+
+
+<h2 class="" style="color: #7f54b3; display: block; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;">
+	<a class="link" href="https://example.com/wp-admin/admin.php?page=wc-orders&amp;action=edit&amp;id=2853" style="font-weight: normal; text-decoration: underline; color: #7f54b3;">[Zamówienie 2853]</a> (2025-04-03)</h2>
+
+<div style="margin-bottom: 40px;">
+	<table class="td font-family " cellspacing="0" cellpadding="6" border="1" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; width: 100%;" width="100%">
+				<thead>
+			<tr>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;" align="left">Produkt</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;" align="left">Ilość</th>
+				<th class="td" scope="col" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; padding: 12px; text-align: left;" align="left">Cena</th>
+			</tr>
+		</thead>
+				<tbody>
+				<tr class="order_item">
+		<td class="td font-family text-align-left" style="color: #636363; border: 1px solid #e5e5e5; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; padding: 12px; vertical-align: middle; word-wrap: break-word;" align="left">
+			Summer Morning - Zapach do Samochodu		</td>
+		<td class="td font-family text-align-left" style="color: #636363; border: 1px solid #e5e5e5; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; padding: 12px; vertical-align: middle;" align="left">
+			1		</td>
+		<td class="td font-family text-align-left" style="color: #636363; border: 1px solid #e5e5e5; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; padding: 12px; vertical-align: middle;" align="left">
+			<span class="woocommerce-Price-amount amount">49,00&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></span>		</td>
+	</tr>
+	
+	<tr class="order_item">
+		<td class="td font-family text-align-left" style="color: #636363; border: 1px solid #e5e5e5; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; padding: 12px; vertical-align: middle; word-wrap: break-word;" align="left">
+			Świeca sojowa S - Sunshine On My Mind		</td>
+		<td class="td font-family text-align-left" style="color: #636363; border: 1px solid #e5e5e5; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; padding: 12px; vertical-align: middle;" align="left">
+			1		</td>
+		<td class="td font-family text-align-left" style="color: #636363; border: 1px solid #e5e5e5; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; padding: 12px; vertical-align: middle;" align="left">
+			<span class="woocommerce-Price-amount amount">69,00&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></span>		</td>
+	</tr>
+	
+		</tbody>
+		<tfoot>
+								<tr class="order-totals order-totals-subtotal">
+						<th class="td text-align-left" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px; border-top-width: 4px;" align="left">
+							Kwota: 						</th>
+						<td class="td text-align-left" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px; border-top-width: 4px;" align="left"><span class="woocommerce-Price-amount amount">118,00&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></span></td>
+					</tr>
+										<tr class="order-totals order-totals-shipping">
+						<th class="td text-align-left" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px;" align="left">
+							Wysyłka: 						</th>
+						<td class="td text-align-left" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px;" align="left">
+<span class="woocommerce-Price-amount amount">16,00&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></span>&nbsp;<small class="shipped_via">przez Paczkomat InPost</small>
+</td>
+					</tr>
+										<tr class="order-totals order-totals-payment_method">
+						<th class="td text-align-left" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px;" align="left">
+							Metoda płatności: 						</th>
+						<td class="td text-align-left" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px;" align="left">Płatność online z PayU</td>
+					</tr>
+										<tr class="order-totals order-totals-total order-totals-last">
+						<th class="td text-align-left" scope="row" colspan="2" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px;" align="left">
+							Razem: 						</th>
+						<td class="td text-align-left" style="color: #636363; border: 1px solid #e5e5e5; vertical-align: middle; text-align: left; padding: 12px;" align="left"><span class="woocommerce-Price-amount amount">134,00&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></span></td>
+					</tr>
+							</tfoot>
+	</table>
+</div>
+
+<table id="addresses" cellspacing="0" cellpadding="0" border="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding: 0;" width="100%">
+	<tr>
+		<td class="font-family text-align-left" valign="top" width="50%" style="font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; border: 0; padding: 0;" align="left">
+							<h2 style="color: #7f54b3; display: block; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;">Adres rozliczeniowy</h2>
+			
+			<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+				Zosia Nowakowska<br>Kasztanowa<br>75/47<br>80-180 Borkowo									<br><a href="tel:222333111" style="color: #7f54b3; font-weight: normal; text-decoration: underline;">222333111</a>													<br>Zosiap_37@wp.pl											</address>
+		</td>
+					<td class="font-family text-align-left" valign="top" width="50%" style="font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; text-align: left; padding: 0;" align="left">
+									<h2 style="color: #7f54b3; display: block; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; font-size: 18px; font-weight: bold; line-height: 130%; margin: 0 0 18px; text-align: left;">Adres do wysyłki</h2>
+				
+				<address class="address" style="padding: 12px; color: #636363; border: 1px solid #e5e5e5;">
+					Zosia Nowakowska<br>Kasztanowa<br>75/47<br>80-180 Borkowo														</address>
+			</td>
+			</tr>
+</table>
+<p style="margin: 0 0 16px;">Świetnie ci idzie.</p>
+Realizuj swoje zamówienia w biegu. <a href="https://woocommerce.com/mobile?blog_id=0&amp;utm_campaign=deeplinks_promote_app&amp;utm_medium=email&amp;utm_source=example.com&amp;utm_term=0" style="color: #7f54b3; font-weight: normal; text-decoration: underline;">Pobierz aplikację mobilną</a>.																		</div>
+																	</td>
+																</tr>
+															</table>
+															<!-- End Content -->
+														</td>
+													</tr>
+												</table>
+												<!-- End Body -->
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">
+									<!-- Footer -->
+									<table border="0" cellpadding="10" cellspacing="0" width="100%" id="template_footer">
+										<tr>
+											<td valign="top" style="padding: 0; border-radius: 6px;">
+												<table border="0" cellpadding="10" cellspacing="0" width="100%">
+													<tr>
+														<td colspan="2" valign="middle" id="credit" style="border-radius: 6px; border: 0; font-family: &quot;Helvetica Neue&quot;,Helvetica,Roboto,Arial,sans-serif; font-size: 12px; line-height: 150%; text-align: center; padding: 24px 0; color: #3c3c3c;" align="center">
+															<p style="margin: 0 0 16px;">Simple Light Candle — Built with <a href="https://woocommerce.com" style="font-weight: normal; text-decoration: underline; color: #3c3c3c;">WooCommerce</a></p>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<!-- End Footer -->
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td><!-- Deliberately empty to support consistent sizing and layout across multiple email clients. --></td>
+			</tr>
+		</table>
+	</body>
+</html>
+

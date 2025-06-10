@@ -1,0 +1,41 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: OrderProcessor.Web/Dockerfile
+    ports:
+      - 8080:80
+    depends_on:
+      - mysql
+      - greenmail
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: OrderDb
+      MYSQL_USER: app
+      MYSQL_PASSWORD: Password123
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  greenmail:
+    image: greenmail/standalone:latest
+    ports:
+      - "3143:3143"   # IMAP
+      - "3025:3025"   # SMTP
+    environment:
+      GREENMAIL_USERS: green@mail.com:password
+      GREENMAIL_IMAP_PORT: 3143
+      GREENMAIL_IMAP_BIND_ADDRESS: 0.0.0.0
+
+volumes:
+  mysql_data:
+
+  
